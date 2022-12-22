@@ -84,6 +84,13 @@ body {
     background-color: var(--clr-primary-paleblue);
     max-width: 1440px;
     font-weight: 500;
+    margin-inline: auto;
+}
+
+section {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 /* utilities */
@@ -224,7 +231,11 @@ body {
 }
 
 
-@media (min-width: 440px) {
+@media (min-width: 375px) {
+    section {
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+
     .content {
         width: 400px;
     }
